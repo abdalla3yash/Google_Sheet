@@ -27,6 +27,7 @@ class _WordScreenState extends State<WordScreen> {
           title: const Text("Document"),
           elevation: 0,
           centerTitle: true,
+          backgroundColor: Colors.cyan,
           actions: [
             IconButton(
                 icon: const Icon(Icons.refresh),
@@ -62,7 +63,7 @@ class _WordScreenState extends State<WordScreen> {
                   shouldEnsureVisible: true,
                 ),
                 htmlToolbarOptions: HtmlToolbarOptions(
-                  toolbarPosition: ToolbarPosition.belowEditor,
+                  toolbarPosition: ToolbarPosition.aboveEditor,
                   toolbarType: ToolbarType.nativeGrid,
                   onButtonPressed:
                       (ButtonType type, bool? status, Function? updateStatus) {
